@@ -2,7 +2,7 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8" />
-    <title>Making your first Phaser 3 Game - Part 10</title>
+    <title>Moedas na praia</title>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
     <style type="text/css">
         body {
@@ -175,24 +175,24 @@ function update ()
         
          // boolean variable to keep track of whether the code has been executed
 
-        if (score === 2 && !codeExecuted) { // check if score is 5 and the code has not been executed
+        if (score === 5 && !codeExecuted) { // check if score is 5 and the code has not been executed
         player.setTint(0x00ff00);
-        nivel = 30;
+        nivel = 500;
         level += 1;
         levelText.setText('Level: ' + level);
         codeExecuted = true; // set the boolean variable to true after executing the code
         }
 
-        if (score === 3 && !codeExecuted2)
+        if (score === 10 && !codeExecuted2)
         {
             player.setTint(0x0000ff);
-            nivel = 50 ;
+            nivel = 1000 ;
             level += 1;
             levelText.setText('Level: ' + level);
             codeExecuted2 = true;
         }
 
-        if (score > 4)
+        if (score > 14)
         {
             clearTimeout(bombTimer);
             clearTimeout(coinTimer);
