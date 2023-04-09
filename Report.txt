@@ -1,0 +1,10 @@
+Report on "Moedas na praia" Game  
+Online link: https://melodic-mochi-751a34.netlify.app/
+
+The game starts with the main character appearing and landing on the ground. Various objects also begin to fall from the top of the screen, including golden stars, bronze stars, and bombs. The main character can collide with all types of objects. When colliding with a golden star, it adds one point to the score count; when colliding with a bronze star, it adds two points to the score count; and when colliding with a bomb, it subtracts one point from the score count.
+
+The objects are randomly created on the top of the screen with various velocities, gravity (depending on the level), bounce, and a timeout that creates new objects at set intervals. The character can move left, right, and jump up, and each collision is accompanied by a sound effect. Positive point counts are followed by cheerful music, while negative ones are followed by a sad tone.
+
+The game has several levels that depend on the score count. Each time the player advances to the next level, the character's color changes and the text displaying the level's score count updates to the current level. The game ends when the character's score falls below 0, at which point a "Game Over" text appears, the falling objects stop, the game physics pause, and the character turns into a black silhouette.
+
+The game is won when the score reaches over 15 points. At that moment, the character turns into a black silhouette, the objects stop being created, the physics pause, and a "Congrats!" message appears on the screen.
