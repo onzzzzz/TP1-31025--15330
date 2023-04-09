@@ -40,7 +40,7 @@ var platforms;
 var score = 0 ;
 var scoreText;
 var bombs;
-var nivel = 20 ;
+var nivel = 50 ;
 var nivelbombas = 500;
 var addNew = true ;
 var addNewer = true;
@@ -65,7 +65,7 @@ function preload ()
     this.load.spritesheet('coin', 'assets/coin.png' , { frameWidth: 20, frameHeight: 20 });
     this.load.spritesheet('coin2', 'assets/coin copy.png' , { frameWidth: 20, frameHeight: 20 });
     this.load.image('bomb', 'assets/bomb.png');
-    this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 50, frameHeight: 50 });
+    this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 48, frameHeight: 48 });
     this.load.audio('buttonSound', 'assets/sound/asound.mp3'); 
     this.load.audio('gameWon', 'assets/sound/gamelost.mp3');
     this.load.audio('bombHit', 'assets/sound/bombhit.mp3');
@@ -177,7 +177,7 @@ function update ()
 
         if (score === 5 && !codeExecuted) { // check if score is 5 and the code has not been executed
         player.setTint(0x00ff00);
-        nivel = 500;
+        nivel = 750;
         level += 1;
         levelText.setText('Level: ' + level);
         codeExecuted = true; // set the boolean variable to true after executing the code
