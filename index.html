@@ -261,14 +261,7 @@ function createBomb() {
     bombTimer = setTimeout(createBomb, 1000);
  } 
 
-  function gameOver() {
-    if (score < 0) {
-        player.setTint(0x000000);
-        this.physics.pause();
-        this.add.text(250, 200, 'Game Over', { fontSize: '50px', fill: '#ffffff' });
-    } return
-    
-  }
+ 
 
 </script>
 
